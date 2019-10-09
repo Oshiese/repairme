@@ -17,17 +17,20 @@
   font-style: normal;
   }
 
-@mixin reg {
-  font-family: 'Museo Sans Light', sans-serif;
-  font-weight: 300;
-} 
-body{ @include reg;}
-
-@mixin bold {
-  font-family: 'Museo Sans Bold', sans-serif;
-  font-weight: 700;
-}
-.hero-text__title{ @include bold}
-.navbar__phone{ @include bold}
-.navbar__batton{ @include bold}
-.hero-text__subtitle{ @include bold}
+  @mixin reg {
+    font-family: 'Museo Sans Light', sans-serif;
+    font-weight: 300;
+  } 
+  body{ @include reg;}
+  
+  @mixin bold {
+    font-family: 'Museo Sans Bold', sans-serif;
+    font-weight: 700;
+  }
+  .hero-text__title{ @include bold}
+  .navbar__phone{ @include bold}
+  .navbar__batton{ @include bold}
+  .hero-text__subtitle{ @include bold}
+  .offer__title{@include bold}
+  .offer__button{@include bold}
+  .offer__phone{@include bold}
