@@ -35,6 +35,7 @@ img {
 .button:hover {
   background-color: #ffdb33;
   cursor: pointer;
+  outline: none;
 }
 
 .section {
@@ -219,6 +220,7 @@ img {
   }
   .hero-list__image {
     margin-right: 15px;
+    min-width: 36px;
   }
 }
 
@@ -399,5 +401,116 @@ body {
   .offer-span2 {
     margin-top: 18px;
   }
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.modal_active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal-dialog {
+  position: relative;
+  margin: auto;
+  max-width: 570px;
+  max-height: 674px;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+
+.modal-dialog__close {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.modal-dialog__title {
+  width: 291px;
+  margin-top: 80px;
+  font-size: 22px;
+  text-align: center;
+  margin-left: 143px;
+  line-height: 33px;
+  margin-bottom: 52px;
+}
+
+.modal-dialog__subtitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 35px;
+  margin-bottom: 35px;
+}
+
+.modal-dialog__input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 100px;
+  margin-left: 100px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 15px;
+  width: 370px;
+}
+
+.modal-dialog__input:first-child {
+  margin-right: 10px;
+}
+
+.modal-dialog__input:focus {
+  border-color: orange;
+  outline: none;
+}
+
+.modal-dialog__button {
+  width: 368px;
+  padding: 28px 116px;
+  margin-left: 102px;
+  margin-right: 100px;
+  margin-bottom: 33px;
+}
+
+.modal-dialog__span {
+  width: 271px;
+  margin-left: 148px;
+  line-height: 20px;
+  font-size: 15px;
+  display: inline-block;
+  text-align: center;
+}
+
+.modal-dialog__phone {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 24px;
+  line-height: 24px;
+  color: #333333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 13px;
+  margin-bottom: 76px;
 }
 /*# sourceMappingURL=style.css.map */
