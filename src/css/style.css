@@ -531,4 +531,36 @@ body {
   margin-top: 13px;
   margin-bottom: 76px;
 }
+
+.scroll_top {
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background: #ffd200;
+  z-index: 100;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.scroll_top:after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-top: 2px solid #fff;
+  border-left: 2px solid #fff;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  position: absolute;
+  top: 7px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
 /*# sourceMappingURL=style.css.map */
