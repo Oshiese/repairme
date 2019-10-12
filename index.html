@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="src/normalaize/normalize.css">
+  <link rel="stylesheet" href="src/css/slick.css">
   <link rel="stylesheet" href="src/css/style.css">
   <title>Ремонт Квартир</title>
 </head>
@@ -132,6 +133,40 @@
       <!-- /.container -->
     </section>
     <!-- /.offer -->
+    <section class="section portfolio">
+      <div class="container">
+        <h2 class="section-title portfolio__title">
+          Работая с 2007 года,
+          мы сделали более 500 ремонтов в квартирах и домах
+        </h2>
+
+        <div class="slider">
+          <div class="slider__item"><img class="slider__image" src="src/img/portfolio/slider_1.jpg" alt="Пример работы 1"></div>
+          <!-- /.slider__item -->
+          <div class="slider__item"><img class="slider__image" src="src/img/portfolio/slider_2.jpg" alt="Пример работы 2"></div>
+          <!-- /.slider__item -->
+          <div class="slider__item"><img class="slider__image" src="src/img/portfolio/slider_3.jpg" alt="Пример работы 3"></div>
+          <!-- /.slider__item -->
+          <div class="slider__item"><img class="slider__image" src="src/img/portfolio/slider_1.jpg" alt="Пример работы 1"></div>
+          <!-- /.slider__item -->
+          <div class="slider__item"><img class="slider__image" src="src/img/portfolio/slider_2.jpg" alt="Пример работы 2"></div>
+          <!-- /.slider__item -->
+          <div class="slider__item"><img class="slider__image" src="src/img/portfolio/slider_3.jpg" alt="Пример работы 3"></div>
+          <!-- /.slider__item -->
+        </div>
+        <!-- /.slider -->
+        <div class="arrows portfolio__arrows">
+          <div class="arrows__left">
+            <img src="src/img/portfolio/left-arrow.png" alt="">
+          </div>
+          <div class="arrows__right">
+            <img src="src/img/portfolio/right-arrow.png" alt="">
+          </div>
+        </div>
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.section portfolio -->
   </main>
   <div class="modal" id="modal">
     <div class="modal-dialog">
@@ -172,6 +207,35 @@
   crossorigin="anonymous"></script>
   <script src="src/js/modal.js"></script>
   <script src="src/js/scroll-top.js"></script>
+  <script src="src/js/slick.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $('.slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        prevArrow: $('.arrows__left'),
+        nextArrow: $('.arrows__right'),
+        responsive: [
+        {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    },
+        ]
+    });
+  });
+    
+  </script>
 
   <div id="toTop"><button class="scroll_top" id="scroll_top"></button></div>
 </body>
