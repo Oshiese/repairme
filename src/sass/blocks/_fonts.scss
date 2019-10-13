@@ -22,6 +22,7 @@
     font-weight: 300;
   } 
   body{ @include reg;}
+  .card__title{@include reg;}
   
   @mixin bold {
     font-family: 'Museo Sans Bold', sans-serif;
@@ -35,3 +36,6 @@
   .offer__button{@include bold}
   .offer__phone{@include bold}
   .modal-dialog__phone{@include bold}
+  .portfolio__title{@include bold}
+  .price__title{@include bold}
+  .card__link{@include bold}
