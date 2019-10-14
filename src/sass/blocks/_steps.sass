@@ -37,6 +37,15 @@
     &-block
       display: flex
       flex-wrap: wrap
+@media (max-width: 1200px)
+  .step
+    flex-basis: 50%
+    margin-bottom: 30px
+    &:after
+      display: none
+    &s
+      &-block
+        justify-content: center
 @media (max-width: 768px)
   .step
     &__text
@@ -52,12 +61,4 @@
         margin-bottom: 34px
       &-block
         flex-direction: column
-@media (max-width: 1200px)
-  .step
-    flex-basis: 50%
-    margin-bottom: 30px
-    &:after
-      display: none
-    &s
-      &-block
-        justify-content: center
+
