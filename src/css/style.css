@@ -73,8 +73,12 @@ img {
   outline: none;
 }
 
-.arrows__left:hover, .arrows__right:hover {
-  cursor: pointer;
+em.invalid {
+  display: block;
+  color: red;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 .navbar-block {
@@ -884,6 +888,12 @@ body {
 }
 
 .brif__input2 {
+  width: 100%;
+  max-width: 370px;
+  margin-bottom: 15px;
+}
+
+.brif__input3 {
   width: 100%;
   max-width: 370px;
   margin-bottom: 30px;
