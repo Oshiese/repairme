@@ -327,6 +327,11 @@ body {
   font-weight: 700;
 }
 
+.steps__title {
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
 .interview__title {
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
@@ -338,6 +343,21 @@ body {
 }
 
 .form__title {
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.contacts__title {
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.contacts__phone {
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.contacts-list__boldtext {
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
 }
@@ -579,6 +599,19 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 13px;
+}
+
+@media (max-width: 768px) {
+  .modal-dialog {
+    max-width: 315px;
+    height: 550px;
+  }
+  .modal-dialog__title {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+  }
 }
 
 .scroll_top {
@@ -1012,6 +1045,171 @@ body {
   }
   .brif__form {
     margin-top: 80px;
+  }
+  .form__title {
+    margin-top: 80px;
+  }
+}
+
+.footer {
+  position: relative;
+}
+
+.map {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+}
+
+.contacts {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding-top: 100px;
+  padding-left: 215px;
+}
+
+.contacts-special {
+  display: block;
+}
+
+.contacts__title {
+  font-size: 22px;
+  line-height: 1.4;
+  margin-bottom: 100px;
+}
+
+.contacts-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.contacts__phone {
+  text-decoration: none;
+  color: #333333;
+}
+
+.contacts-list {
+  padding: 0;
+  list-style: none;
+}
+
+.contacts-list__text {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.contacts-list__icon {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  margin-right: 23px;
+}
+
+.contacts-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 39px;
+}
+
+@media (max-width: 1200px) {
+  .contacts {
+    padding-top: 50px;
+    padding-left: 160px;
+  }
+}
+
+@media (max-width: 991px) {
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    position: static;
+    padding-bottom: 0;
+  }
+  .map {
+    position: static;
+    width: 100%;
+  }
+  .contacts {
+    color: #000;
+    padding-top: 30px;
+    padding-left: 0;
+    margin: auto;
+    padding-bottom: 30px;
+  }
+  .contacts__title {
+    font-weight: 700;
+    max-width: 600px;
+    margin-bottom: 60px;
+    text-align: center;
+  }
+  .contacts-list {
+    margin-left: 30%;
+  }
+  .contacts-list__icon {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    margin-right: 20px;
+    margin-top: 5px;
+  }
+  .contacts-list__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 567px) {
+  .contacts-list {
+    margin-left: 20%;
+  }
+}
+
+@media (max-width: 387px) {
+  .contacts {
+    padding-top: 45px;
+    margin-left: 5px;
+    padding-bottom: 30px;
+  }
+  .contacts__title {
+    text-align: left;
+    max-width: 260px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .contacts-list {
+    margin-left: 0;
+  }
+  .contacts-list__item {
+    margin-bottom: 30px;
+  }
+  .contacts-list__icon {
+    margin-right: 12px;
+    margin-top: 5px;
   }
 }
 /*# sourceMappingURL=style.css.map */
