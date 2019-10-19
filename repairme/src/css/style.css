@@ -79,6 +79,12 @@ em.invalid {
   margin-top: -10px;
   margin-bottom: 10px;
   text-align: center;
+  position: absolute;
+}
+
+.input-group {
+  display: inline-block;
+  position: relative;
 }
 
 .navbar-block {

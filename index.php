@@ -79,8 +79,12 @@
           </span>
           <!-- /.section-subtitle -->
           <form action="mail.php" method="POST" class="form offer__form" id="offers-form">
-            <input type="text" name="username" class="input offer__input" placeholder="Ваше имя">
-            <input type="tel" name="phone" class="input offer__input phone" placeholder="Ваш телефон">
+            <div class="input-group">
+              <input type="text" name="username" class="input offer__input" placeholder="Ваше имя">
+            </div>
+            <div class="input-group">
+              <input type="tel" name="phone" class="input offer__input phone" placeholder="Ваш телефон">
+            </div>
             <button class="button offer__button">Получить бесплатный дизайн-проект
             </button>
           </form>
@@ -504,108 +508,7 @@
   <script src="src/js/wow.min.js"></script>
   <script src="src/js/jquery.validate.min.js"></script>
   <script src="src/js/jquery.maskedinput.min.js"></script>
-
-  <script>
-    // Инициализация WOW.js
-    new WOW().init();
-    
-    $(document).ready(function(){
-      $('#brif-form').validate({
-        rules: {
-          username: {
-            required: true,
-            minlength: 2,
-          },
-          email: {
-            required: true,
-            email: true
-          },
-          phone: "required"
-        },
-        errorElement: "em",
-        errorClass: "invalid",
-        messages: {
-          username: {
-            required: "Заполните поле",
-            minlength: jQuery.validator.format("Осталось символов: {0}")
-          },
-          email: {
-            required: "Заполните поле",
-            email: "Укажите верный email"
-          },
-          phone: "Заполните поле"
-        }
-      });
-      // Маска для телефона
-      $('.phone').mask('+7 (999) 999-99-99');
-      $('#modal-form').validate({
-        rules: {
-          username: {
-            required: true,
-            minlength: 2,
-          },
-          phone: "required"
-        },
-        errorElement: "em",
-        errorClass: "invalid",
-        messages: {
-          username: {
-            required: "Заполните поле",
-            minlength: jQuery.validator.format("Осталось символов: {0}")
-          },
-          phone: "Заполните поле",
-        }
-      });
-      // Маска для телефона
-      $('.phone').mask('+7 (999) 999-99-99');
-      $('#offers-form').validate({
-        rules: {
-          username: {
-            required: true,
-            minlength: 2,
-          },
-          phone: "required"
-        },
-        errorElement: "em",
-        errorClass: "invalid",
-        messages: {
-          username: {
-            required: "Заполните поле",
-            minlength: jQuery.validator.format("Осталось символов: {0}")
-          },
-          phone: "Заполните поле",
-        }
-      });
-      // Маска для телефона
-      $('.phone').mask('+7 (999) 999-99-99');
-      // Слайдер
-      $('.slider').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        prevArrow: $('.arrows__left'),
-        nextArrow: $('.arrows__right'),
-        responsive: [
-        {
-      breakpoint: 1200,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
-      }
-    },
-    {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    },
-        ]
-    });
-  });
-    
-  </script>
+  <script src="src/js/main.js"></script>
 
   <div id="toTop"><button class="scroll_top" id="scroll_top"></button></div>
 </body>

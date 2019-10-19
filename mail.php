@@ -16,14 +16,14 @@ try {
     $mail->SMTPAuth   = true;
     
     // Настройки вашей почты
-    $mail->Host       = 'smtp.yandex.ru'; // SMTP сервера GMAIL
-    $mail->Username   = 'Oshiese@yandex.ru'; // Логин на почте
-    $mail->Password   = 'Adventure 402893'; // Пароль на почте
+    $mail->Host       = 'smtp.gmail.com'; // SMTP сервера GMAIL
+    $mail->Username   = 'andreyall117@gmail.com'; // Логин на почте
+    $mail->Password   = 'QWERTASDFGzxcvb12345'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom(' Oshiese@yandex.ru', 'Andrey'); // Адрес самой почты и имя отправителя
+    $mail->setFrom(' andreyall117@gmail.com', 'Andrey'); // Адрес самой почты и имя отправителя
     // Получатель письма
-    $mail->addAddress('andreyall117@gmail.com');
+    $mail->addAddress('Oshiese@yandex.ru');
     // -----------------------
     // Само письмо
     // -----------------------
@@ -35,7 +35,7 @@ try {
   
 // Проверяем отравленность сообщения
 if ($mail->send()) {
-    header('Location: thanks.php');
+    echo "Форма успешно отправлена";
 } else {
 echo "Сообщение не было отправлено. Неверно указаны настройки вашей почты";
 }
